@@ -1,0 +1,10 @@
+Installation:
+
+The following packages are required:
+1. Python 2.6 or later.
+2. NumPy.
+3. Scipy 0.13.3 or later.
+4. Matplotlib.
+
+In the root directory, execute,
+python setup.py install [--prefix=/path/to/install/]

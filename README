@@ -1,0 +1,69 @@
+/========================================================================\\
+|                ####  #  #   ##   ####  ####  ####  ####                |
+|                #  #  #  #  #  #  #     #     #     #  #                |
+|                ####  ####  ####  ####  ####  # ##  #  #                |
+|                #     #  #  #  #     #  #     #  #  #  #                |
+|                #     #  #  #  #  ####  ####  ####  ####                |
+|             Automatic calculation and plot of phase diagram            |
+|                    by Zhong-Li Liu (zl.liu@163.com)                    |
+\\========================================================================/
+
+
+
+Contents in the main directory:
+-----------------------------------------
+
+ * COPYRIGHT: the license of under which PHASEGO can be distributed
+ * INSTALL: installation method 
+ * README: This file
+ * doc: Users' Manual
+ * src: The source code; please see also the file 'INSTALL'
+ * examples: some typical examples
+
+
+Contents in the src directory:
+-----------------------------------------
++-- src:
+|-- Ana_Phase_Transition.py: the module for analyzing phase transitions among different structures
+|-- Anharmonicity_extract.py: the module for anharmonic effects extraction
+|-- Constants.py: the module containing some physical constants and functions
+|-- CVP_Gamma_BTP_CP.py: the module for calculating the C(V)_P, Gamma, B(T)_P and C(P)
+|-- Debye_temp.py: the module for calculating the Debye temperature
+|-- Entropy_CVV_Hugoniot.py: the module for reducing the Entropy, C(V)_V and Hugoniot PVT relations
+|-- EOSfit.py: the module for EOS fitting
+|-- Find_Cross_Point.py: the module for finding the cross point of two curves
+|-- GetB_T_T.py: the module for calculating the B(T)_T
+|-- GibbsFree_en.py: the module for reducing the Gibbs free energies
+|-- Helm_free.py: the module for reducing the Helmholtz free energies
+|-- Parse_ve.py: the module for reading the volume-energy data
+|-- phasego: the main program of phasego package
+|-- Plot_Matplotlib.py: the module for plot the phase diagram using the matplotlib library
+|-- Polynomial_fit.py: the module for Polynomial curve fitting
+|-- PV_T2VT_P.py: the module for transiting P(V)_T data to V(T)_P data
+|-- ReadInput.py: the module for reading the controlling arguments and their values
+|-- Single_phase.py: the module for single phase analysis
+|-- Thermal_Expan.py: the module for calculating the thermal expansion
+|-- Thermal_Pressure.py: the module for calculating the thermal pressure
+
+
+Website:
+-----------------------------------------
+http://sourceforge.net/projects/phasego
+
+
+Bugs fixing:
+-----------------------------------------
+Bugs and suggestions can be sent to zl.liu@163.com.
+
+
+Citation:
+-----------------------------------------
+If you find something interesting that will be published, please cite PHASEGO as,
+
+Zhong-Li Liu, PHASEGO: A toolkit for automatic calculation and plot of phase
+diagram, Computer Physics Communications 191 (2015) 150.
+
+Zhong-Li Liu, PHASEGO 2.0: Counting full anharmonic effects from high-temperature
+phonon density of states, Computer Physics Communications, 197 (2015) 341.
+
+

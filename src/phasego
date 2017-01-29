@@ -1,0 +1,156 @@
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+  Phasego -- Automatic calculation and plot of phase diagram
+
+  Copyright (C) 2012-2016 by Zhong-Li Liu
+
+  This program is free software; you can redistribute it and/or modify it under the
+  terms of the GNU General Public License as published by the Free Software Foundation
+  version 3 of the License.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+  E-mail: zl.liu@163.com
+"""
+
+# Echo welcome info.
+print ""
+phasego = \
+    '''
+/========================================================================\\
+|                ####  #  #   ##   ####  ####  ####  ####                |
+|                #  #  #  #  #  #  #     #     #     #  #                |
+|                ####  ####  ####  ####  ####  # ##  #  #                |
+|                #     #  #  #  #     #  #     #  #  #  #                |
+|                #     #  #  #  #  ####  ####  ####  #### -- 3.0.0       |
+|             Automatic calculation and plot of phase diagram            |
+|                    by Zhong-Li Liu (zl.liu@163.com)                    |
+\\========================================================================/
+'''
+print phasego
+print ""
+
+import os
+import time
+from ReadInput import indict
+from Single_phase import single_phase
+from Ana_Phase_Transition import ana_phasetran
+from Products_Parse import *
+from Products_Gibbs import products_gibbs
+
+# Count time from the start of run
+start = time.clock()
+
+
+# print inpdir_comp
+# The input directory for each single phase
+inpdir = ["inp-" + i + "-" + indict['Formula_Name'][0] for i in indict['Names_of_Strs']]
+# inpdir = ["inp-solid-Cu"]
+
+
+# The big dictory for the Gibbs free energy of each phase
+# BigDict_P ={phasename:{P:G(T)}}
+# BigDict_T ={phasename:{T:G(P)}}
+BigDict_P = {}
+BigDict_T = {}
+
+# Read in ve and phonon dos info. for each structure
+for i, inppath in enumerate(inpdir):
+    num_formula_units = int(indict['Num_Formula_Units'][i])
+    print "Phase:", indict['Formula_Name'][0], "-->", indict['Names_of_Strs'][i]
+    print "=" * 20
+
+    # Prepare output dir for the each single phase
+    outpath = "out-" + indict['Names_of_Strs'][i] + "-" + indict['Formula_Name'][0]
+    if not os.path.isdir("%s" % outpath):
+        os.mkdir("%s" % outpath)
+
+    # Do each single phase calculations and return Gibbs free energy info.
+    GibbsDict_P, GibbsDict_T = single_phase(num_formula_units, inppath, outpath)
+
+    # Gather the Gibbs info for each structure
+    BigDict_P[indict['Names_of_Strs'][i] + "-" + indict['Formula_Name'][0]] = GibbsDict_P
+    BigDict_T[indict['Names_of_Strs'][i] + "-" + indict['Formula_Name'][0]] = GibbsDict_T
+    print
+    # print "Single phase analysis is done."
+
+if 'If_Incl_Decomp_Analysis' in indict:
+    if indict['If_Incl_Decomp_Analysis'][0] == 'yes':
+        print "The phases of reactants/products:"
+        prod_list = []
+        inpdir_comp = []
+        num_formula_units = []
+        for i, comp in enumerate(indict['Products_Info']):
+            inpdir_comp.append("inp-" + comp.split("@")[1].split(":")[0] + "-" + comp.split("@")[0])
+            num_formula_units.append(int(comp.split(":")[1]))
+            if comp.split("@")[0] not in prod_list:
+                prod_list.append(comp.split("@")[0])
+            if len(prod_list) > 5:
+                print "The maximum number of reactants/products is 5. Please \n" \
+                      "contact zl.liu@163.com to support more kinds of products."
+                exit(0)
+
+        Names_Components = prod_list
+        Formula_Name = indict['Formula_Name'][0]
+        Comp_Ratio_Dict = products_parse(Formula_Name, Names_Components)
+        Comp_Ratios = Comp_Ratio_Dict.keys()
+        # print Names_Components
+
+        BigDict_Comp_P = {}
+        BigDict_Comp_T = {}
+
+        for i, inppath in enumerate(inpdir_comp):
+
+            print
+            print "Phase:", inppath.split("-")[2], "-->", inppath.split("-")[1]
+            print "=" * 20
+
+            # Prepare output dir for the each single phase
+            outpath = "out-" + inppath.split("-")[1] + "-" + inppath.split("-")[2]
+            if not os.path.isdir("%s" % outpath):
+                os.mkdir("%s" % outpath)
+
+            # Do each single phase calculations and return Gibbs free energy info.
+            GibbsDict_P, GibbsDict_T = single_phase(num_formula_units[i], inppath, outpath)
+
+            # Gather the Gibbs info for each structure
+            BigDict_Comp_P[inppath.split("-")[1] + "-" + inppath.split("-")[2]] = GibbsDict_P
+            BigDict_Comp_T[inppath.split("-")[1] + "-" + inppath.split("-")[2]] = GibbsDict_T
+            print
+
+        print "Single phase analysis is done."
+        print
+        print "Phase transition and synthesis/decomposition conditions analysis ..."
+        print
+        print "Possible synthesis/decomposition processes:"
+        print
+        BigDict_P = products_gibbs(Comp_Ratio_Dict, Comp_Ratios, Names_Components, BigDict_Comp_P, BigDict_Comp_T, BigDict_P, BigDict_T)
+
+        ana_phasetran(BigDict_P, BigDict_T)
+        print
+        print "Phase transition and synthesis/decomposition condition analysis is done."
+
+print
+
+# Phase transition analysis among all these phases and output phase diagram
+if 'If_Incl_Decomp_Analysis' in indict:
+    if indict['If_Analysize_Phase_Transition'][0] == 'yes' and \
+                    indict['If_Incl_Decomp_Analysis'][0] != 'yes' and \
+                    len(indict['Names_of_Strs']) >= 2:
+        print "Phase transition analysis ..."
+        ana_phasetran(BigDict_P, BigDict_T)
+        print "Phase transition analysis is done."
+
+elif indict['If_Analysize_Phase_Transition'][0] == 'yes' and len(indict['Names_of_Strs']) >= 2:
+    print "Phase transition analysis ..."
+    ana_phasetran(BigDict_P, BigDict_T)
+    print "Phase transition analysis is done."
+
+print "=" * 40
+print
+print "Good luck!"
+print
+print "Time used: %6.2f Seconds." % (time.clock() - start)
