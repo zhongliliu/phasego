@@ -1,0 +1,162 @@
+# at fixed P/GPa   |     phase1   |    transits to    |    phase2   |   when T increases to T/K
+          784.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            2737.48
+          786.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            2878.27
+          788.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3016.96
+          790.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3154.18
+          792.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3288.20
+          794.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3419.99
+          796.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3548.84
+          798.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3677.66
+          800.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3801.92
+          802.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            3925.80
+          804.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4045.86
+          806.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4166.98
+          808.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4285.64
+          810.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4402.29
+          812.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4519.53
+          814.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4632.05
+          816.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4743.10
+          818.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4854.14
+          820.00 sh-Mg + B2-MgO         ---------> fcc-Mg + B2-MgO            4962.94
+
+          600.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1477.03
+          602.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1493.48
+          604.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1510.96
+          606.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1529.29
+          608.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1547.55
+          610.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1564.95
+          612.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1581.60
+          614.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1597.81
+          616.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1613.82
+          618.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1629.78
+          620.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1645.86
+          622.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1662.24
+          624.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1678.79
+          626.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1695.15
+          628.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1711.02
+          630.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1726.44
+          632.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1741.65
+          634.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1756.84
+          636.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1772.12
+          638.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1787.44
+          640.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1802.78
+          642.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1818.09
+          644.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1833.31
+          646.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1848.39
+          648.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1863.29
+          650.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1878.04
+          652.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1892.69
+          654.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1907.30
+          656.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1921.87
+          658.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1936.40
+          660.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1950.86
+          662.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1965.27
+          664.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1979.68
+          666.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            1994.13
+          668.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2008.69
+          670.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2023.26
+          672.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2037.69
+          674.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2051.81
+          676.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2065.59
+          678.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2079.13
+          680.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2092.56
+          682.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2105.97
+          684.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2119.39
+          686.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2132.75
+          688.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2145.97
+          690.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2158.99
+          692.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2171.84
+          694.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2184.58
+          696.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2197.28
+          698.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2210.01
+          700.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2222.75
+          702.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2235.46
+          704.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2248.08
+          706.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2260.56
+          708.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2272.87
+          710.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2285.02
+          712.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2297.03
+          714.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2308.89
+          716.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2320.66
+          718.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2332.38
+          720.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2344.08
+          722.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2355.83
+          724.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2367.62
+          726.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2379.37
+          728.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2391.01
+          730.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2402.48
+          732.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2413.74
+          734.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2424.86
+          736.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2435.88
+          738.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2446.86
+          740.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2457.85
+          742.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2468.84
+          744.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2479.77
+          746.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2490.60
+          748.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2501.27
+          750.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2511.77
+          752.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2522.17
+          754.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2532.56
+          756.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2543.00
+          758.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2553.59
+          760.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2564.34
+          762.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2575.11
+          764.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2585.73
+          766.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2596.05
+          768.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2605.97
+          770.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2615.51
+          772.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2624.76
+          774.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2633.83
+          776.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2642.78
+          778.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2651.69
+          780.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2660.61
+          782.00        t-Mg3O2         ---------> fcc-Mg + B2-MgO            2669.61
+
+          784.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2672.01
+          786.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2665.19
+          788.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2658.44
+          790.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2651.73
+          792.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2645.02
+          794.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2638.28
+          796.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2631.50
+          798.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2624.63
+          800.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2617.65
+          802.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2610.54
+          804.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2603.26
+          806.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2595.77
+          808.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2588.06
+          810.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2580.16
+          812.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2572.11
+          814.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2563.93
+          816.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2555.68
+          818.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2547.39
+          820.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2539.09
+          822.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2530.76
+          824.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2522.37
+          826.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2513.92
+          828.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2505.36
+          830.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2496.68
+          832.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2487.86
+          834.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2478.93
+          836.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2469.88
+          838.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2460.75
+          840.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2451.55
+          842.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2442.30
+          844.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2432.98
+          846.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2423.55
+          848.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2413.97
+          850.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2404.21
+          852.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2394.22
+          854.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2384.00
+          856.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2373.60
+          858.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2363.06
+          860.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2352.42
+          862.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2341.72
+          864.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2330.92
+          866.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2319.99
+          868.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2308.87
+          870.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2297.53
+          872.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2285.93
+          874.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2274.08
+          876.00        t-Mg3O2         ---------> sh-Mg + B2-MgO            2262.00
+

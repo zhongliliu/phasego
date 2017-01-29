@@ -1,0 +1,37 @@
+# at fixed P/GPa   |     phase1   |    transits to    |    phase2   |   when T increases to T/K
+           10.00   wurtzite-GaN         --------->   rocksalt-GaN            4492.93
+           11.00   wurtzite-GaN         --------->   rocksalt-GaN            4332.35
+           12.00   wurtzite-GaN         --------->   rocksalt-GaN            4170.46
+           13.00   wurtzite-GaN         --------->   rocksalt-GaN            4006.55
+           14.00   wurtzite-GaN         --------->   rocksalt-GaN            3839.94
+           15.00   wurtzite-GaN         --------->   rocksalt-GaN            3669.96
+           16.00   wurtzite-GaN         --------->   rocksalt-GaN            3495.96
+           17.00   wurtzite-GaN         --------->   rocksalt-GaN            3317.24
+           18.00   wurtzite-GaN         --------->   rocksalt-GaN            3133.11
+           19.00   wurtzite-GaN         --------->   rocksalt-GaN            2942.85
+           20.00   wurtzite-GaN         --------->   rocksalt-GaN            2745.69
+           21.00   wurtzite-GaN         --------->   rocksalt-GaN            2540.74
+           22.00   wurtzite-GaN         --------->   rocksalt-GaN            2326.98
+           23.00   wurtzite-GaN         --------->   rocksalt-GaN            2103.18
+           24.00   wurtzite-GaN         --------->   rocksalt-GaN            1867.82
+           25.00   wurtzite-GaN         --------->   rocksalt-GaN            1618.95
+           26.00   wurtzite-GaN         --------->   rocksalt-GaN            1353.82
+           27.00   wurtzite-GaN         --------->   rocksalt-GaN            1068.08
+           28.00   wurtzite-GaN         --------->   rocksalt-GaN             752.54
+           29.00   wurtzite-GaN         --------->   rocksalt-GaN             364.84
+
+            0.00   wurtzite-GaN         ---------> zencblende-GaN            2746.14
+            1.00   wurtzite-GaN         ---------> zencblende-GaN            2922.75
+            2.00   wurtzite-GaN         ---------> zencblende-GaN            3101.68
+            3.00   wurtzite-GaN         ---------> zencblende-GaN            3282.65
+            4.00   wurtzite-GaN         ---------> zencblende-GaN            3465.41
+            5.00   wurtzite-GaN         ---------> zencblende-GaN            3649.75
+            6.00   wurtzite-GaN         ---------> zencblende-GaN            3835.47
+            7.00   wurtzite-GaN         ---------> zencblende-GaN            4022.41
+            8.00   wurtzite-GaN         ---------> zencblende-GaN            4210.40
+            9.00   wurtzite-GaN         ---------> zencblende-GaN            4399.31
+
+            7.00 zencblende-GaN         --------->   rocksalt-GaN            5590.23
+            8.00 zencblende-GaN         --------->   rocksalt-GaN            5202.74
+            9.00 zencblende-GaN         --------->   rocksalt-GaN            4797.48
+

@@ -1,0 +1,123 @@
+###===========================================================###
+###==================== PHASEGO input file ===================###
+###=============== (PHASE Global Optimization) ===============###
+###===========================================================###
+### Lines started with "#" are omitted.
+### Parameter and value(s) are placed in the same line, in any
+### order with any number of blank lines.
+###
+# Note:
+###
+# A. volume unit can be: Bohr3 or A3, energy: Ry, Hartree, or eV.
+# B. Num_Formula_Units is the number of chemical formula units
+#    for energy and phonon dos calculations.
+# C. dos files: dos are normalized to 1 or 3*n, and the unit of
+#    frequencies can be choosen from cm-1, THz, meV, eV.
+#
+# EOS Names (number):
+# 1. Murnaghan: Murnaghan EOS (F. D. Murnaghan, Am. J. Math.
+#    49, 235 (1937))
+# 2. Birch: Birch EOS (From Intermetallic compounds:
+#    Principles and Practice, Vol I: Principles. pages 195-210)
+# 3. BirchMurnaghan: Birch-Murnaghan 3rd-order EOS (F. Birch,
+#    Phys. Rev. 71, p809 (1947))
+# 4. BirchMurnaghan: Birch-Murnaghan 4rd-order EOS (F. Birch,
+#    Phys. Rev. 71, p809 (1947))
+# 5. Vinet: Vinet EOS (Vinet equation from PRB 70, 224107)
+# 6. Universal: Universal EOS (P. Vinet et al., J. Phys.:
+#    Condens. Matter 1, p1941 (1989))
+# 7. Natural strain 3rd-order EOS (Poirier J-P and Tarantola A,
+#    Phys. Earth Planet Int. 109, p1 (1998))
+# 8. Natural strain 4rd-order EOS (Poirier J-P and Tarantola A,
+#    Phys. Earth Planet Int. 109, p1 (1998))
+# Others: Fitting Polynomial to F-V data: pn, e.g., p6
+###===========================================================###
+
+# The EOS name used for fitting
+Eos_Name = 3
+
+# The chemical formula unit (f.u.) name of the crystal. It must
+# be in correct form and have no brackets, e.g., MgSiO3, WC, 
+# BN3, Al2O3, Si, Al3Ti. The number of atoms for each element 
+# in the f.u. will be parsed from it. Al2(SO4)3 ---> Al2S3O12
+Formula_Name = Cu
+
+# The user-defined name for each corresponding structure. The
+# ve and phonon dos files are placed in each inp-name dir. The 
+# output files are placed in each out-name dir.
+Names_of_Strs = fcc 
+
+# The number of chemical formula units used for the v-e and phonon
+# dos data of each str defined in Names_of_Strs correspondingly.
+Num_Formula_Units = 1 
+
+# The prefix name of volume-energy data files for each str.
+# The full name is the prefix name plus "T", where T is 
+# temperature to take into account the electronic thermal 
+# excitation by finite temperature DFT. If including the 
+# electronic thermal excitation free energy, the temperature 
+# start, end, and interval should be the same as Tdata below.
+VE_data_File_Name = ve-
+
+# The units for volume and energy respectively,
+# volume: Bohr3, A3; energy: Ry, Hartree, eV
+Units_VE = Bohr3 Ry
+
+# Read_what = dos_data for phonon dos, Read_what = TF_data
+# for temperature-helmholt free energy data.
+Read_what = dos_data
+
+# Phonon dos file prefix name, i.e., it plus the volume value
+# in ve file is the full name.
+Ph_Dos_File_Base_Name = dos-
+
+# Unit of frequency in dos data
+Unit_of_Freq = cm-1
+
+# Temperature data (K): start, end, interval
+Tdata_Read = 0 1000 50
+
+# Temperature data (K): start, end, interval
+Tdata_Write = 0 1000 10
+
+# Pressure data (GPa): start, end, interval
+Pdata = 0 50 10
+
+# If calculate thermal properties, yes or no
+If_Incl_Phonon = yes
+
+# Anharmonic phonon from high-temperature phonon DOS
+If_Incl_Anharm_Phonon = yes
+
+# If include electronic thermal excitation free energy by
+# finite temperature DFT, for metals
+If_Incl_Electronic_Excitation = no
+
+# If analyze the potential phase transition P-T points between
+# these strs, yes or no
+If_Analysize_Phase_Transition = no
+
+# If plot phase diagram using mathplotlib, yes or no
+If_Plot = no
+
+# If analysize Hugoniot PTV, yes or no
+If_Hugoniot = no
+
+# If calculate Debye Temperature, yes or no
+If_Calc_Debye_Temp = no
+
+################ synthesis/decomposition conditions analysis ################
+# If include decomposition conditions analysis in phase 
+# transition analysis.
+If_Incl_Decomp_Analysis = no
+
+# The products information after the possible synthesis/decomposition.
+# (Chemical formula)@(Phase name):(Number of chemical formula units)
+# pairs, no space for each str. The number of chemical formula 
+# units is that used for the ve and phonon dos data of each 
+# structure of each product.
+# e.g., Mg@fcc:1 Mg@sh:1 MgO@B2:1 MgO@B1:1 MgO2@t:1
+Products_Info = Mg@fcc:1 Mg@sh:1 MgO@B1:1 MgO@B2:1 MgO2@t:2
+
+################ synthesis/decomposition conditions analysis ################
+
